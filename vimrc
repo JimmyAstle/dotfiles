@@ -1,9 +1,9 @@
 set nocompatible
 
 " Pathogen
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+"execute pathogen#infect()
+"syntax on
+"filetype plugin indent on
 
 " Tabs are 2 spaces
 set expandtab
