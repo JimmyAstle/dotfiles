@@ -1,9 +1,9 @@
 set nocompatible
 
 " Pathogen
-"execute pathogen#infect()
-"syntax on
-"filetype plugin indent on
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
 " Tabs are 2 spaces
 set expandtab
@@ -95,3 +95,12 @@ nmap <silent> <Right> :tabn<CR>
 noremap <Leader>s :split
 noremap <Leader>v :vnew
 noremap <Leader>t :tabe <C-R><CR>
+
+" Disable quote hiding in json from https://github.com/elzr/vim-json
+let g:vim_json_syntax_conceal = 0
+" Always show the status line for airline
+set laststatus=2
+" Arline
+let g:airline_theme='murmur'
+let g:airline_powerline_fonts = 1
+set guifont=Inconsolata-g\ for\ Powerline:h11
